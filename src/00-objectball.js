@@ -129,7 +129,6 @@ function winningTeam(){
     let homePoints = 0
     let awayPoints = 0
     for (let gameKey in game){
-        console.log(gameKey)
         let teamObj = game[gameKey]
         for(let item in teamObj){
             if (item==='players'){
@@ -184,6 +183,3 @@ function doesLongNameStealATon(){
         }
     }return (longestName===stealGoat)
 }
-//console.log(mostPointsScored())
-//console.log(bigShoeRebounds())
-console.log(doesLongNameStealATon())
